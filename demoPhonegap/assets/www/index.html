@@ -1,0 +1,25 @@
+
+<!--HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>My First Application</title>
+<link rel="stylesheet" type="text/css"
+	href="css/dx.android.holo-dark.css" />
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/knockout-3.0.0.js"></script>
+<script type="text/javascript" src="js/globalize.min.js"></script>
+<script type="text/javascript" src="js/dx.phonejs.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div data-options="dxView: {name: 'home'}">
+		<h1 data-bind="text: message"></h1>
+		Enter your name:
+		<div data-bind="dxTextBox: { value: name }" style="width: 200px"></div>
+		<div
+			data-bind="dxButton: { text: 'Say Hello', clickAction: sayHello }" style="width: 100px"></div>
+	</div>
+</body>
+</html>
